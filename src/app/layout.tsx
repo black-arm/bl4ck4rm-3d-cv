@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Raleway } from 'next/font/google';
+import { Kode_Mono } from 'next/font/google';
 import FixedBackground from '../components/FixedBackground';
 
-const font = Raleway({
+const font = Kode_Mono({
   subsets: ['latin'],
   display: 'swap',
 });
@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" className={font.className}>
       <body>
         <FixedBackground />
-        {children}
+        <div className="relative z-10">{children}</div>
       </body>
     </html>
   );
