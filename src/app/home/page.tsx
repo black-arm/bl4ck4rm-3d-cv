@@ -1,7 +1,9 @@
-import IconCard from '@/components/IconCard';
-import InfoCard from '@/components/InfoCard';
-import NameCard from '@/components/NameCard';
+
 import React from 'react';
+import InfoCard from './components/InfoCard';
+import IconCard from './components/IconCard';
+import NameCard from './components/NameCard';
+import TechnologiesCard from './components/Technologies';
 
 export default function Home() {
   return (
@@ -19,7 +21,15 @@ export default function Home() {
               <IconCard />
             </div>
           </div>
-          <div className='hidden xl:block'>Visible on xl</div>
+          <div className='hidden xl:block'>
+
+            <TechnologiesCard technologies={[
+              'Next.js', 
+              'React', 'TypeScript', 'Angular',
+              'Tailwind CSS', 
+              'Node.js', 'JavaScript', 'Linux', 'Fastify',
+              'HTML5', 'CSS3']} />
+          </div>
           <div className='hidden xl:block'>Visible on xl</div>
           <div className='hidden md:block xl:hidden'>Visible on md</div>
           <div className='hidden md:block xl:hidden'>Visible on md</div>
