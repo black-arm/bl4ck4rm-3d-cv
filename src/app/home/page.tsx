@@ -4,8 +4,15 @@ import InfoCard from './components/InfoCard';
 import IconCard from './components/IconCard';
 import NameCard from './components/NameCard';
 import TechnologiesCard from './components/Technologies';
+import AboutCard from './components/AboutCard';
+import { getInfo } from './api/home.api';
+import { UserInfo } from '../../shared/model';
+import ExperienceCard from './components/ExperienceCard';
 
-export default function Home() {
+export default async function Home() {
+
+  const info: UserInfo = await getInfo();
+
   return (
     <>
       <div className='w-full h-[100vh] px-12 py-7'>
@@ -13,6 +20,7 @@ export default function Home() {
           <div className='hidden xl:block'>
             <div className="flex flex-col gap-5">
               <InfoCard />
+              <AboutCard text={info.aboutMe.description} />
             </div>
           </div>
           <div className='hidden xl:block'>
@@ -22,15 +30,11 @@ export default function Home() {
             </div>
           </div>
           <div className='hidden xl:block'>
-
-            <TechnologiesCard technologies={[
-              'Next.js', 
-              'React', 'TypeScript', 'Angular',
-              'Tailwind CSS', 
-              'Node.js', 'JavaScript', 'Linux', 'Fastify',
-              'HTML5', 'CSS3']} />
+            <TechnologiesCard technologies={info.technologies} />
           </div>
-          <div className='hidden xl:block'>Visible on xl</div>
+          <div className='hidden xl:block'>
+            <ExperienceCard experiences={info.experiences} />
+          </div>
           <div className='hidden md:block xl:hidden'>Visible on md</div>
           <div className='hidden md:block xl:hidden'>Visible on md</div>
           <div className='block md:hidden'>Visible on sm or smaller</div>

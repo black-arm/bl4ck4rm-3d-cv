@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Kode_Mono } from 'next/font/google';
-import FixedBackground from '../components/FixedBackground';
+import FixedBackground from "@/shared/components/FixedBackground";
 
 const font = Kode_Mono({
   subsets: ['latin'],

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import myMemoji from '@/my_memoji.png';
-import Card from '@/components/Card';
+import Card from '@/shared/components/Card';
 
 const IconCard: React.FC = () => {
     return (

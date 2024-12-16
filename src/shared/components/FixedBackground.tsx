@@ -1,4 +1,3 @@
-// src/components/FixedBackground.tsx
 import React from 'react';
 
 const FixedBackground: React.FC = () => {

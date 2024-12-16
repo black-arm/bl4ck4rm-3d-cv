@@ -1,0 +1,58 @@
+{
+    "aboutMe": {
+        "description": "I am a software engineer with a passion for creating and developing software applications. I have experience in developing web applications. I am always looking for new challenges and opportunities to learn and grow as a software engineer."
+    },
+    "technologies": [
+        "Next.js", 
+        "React", "TypeScript", "Angular",
+        "Tailwind CSS", 
+        "Node.js", "JavaScript", "Linux", "Fastify",
+        "HTML5", "CSS3"
+    ],
+    "experiences":[
+        {
+            "title": "Innovation Engineering",
+            "description": "Software engineer working on innovative projects and solutions.",
+            "startDate": "January 2021",
+            "endDate": "Present"
+        },
+        {
+            "title": "Be Gear srl",
+            "description": "Frontend consultant using Angular, NgRx, React, and Next.js.",
+            "startDate": "January 2020",
+            "endDate": "December 2020"
+        },
+        {
+            "title": "Fides srl",
+            "description": "Frontend consultant in the financial sector using Angular and NgRx.",
+            "startDate": "January 2019",
+            "endDate": "December 2019"
+        },
+        {
+            "title": "Amaris Consulting srl",
+            "description": "Consultant in the banking sector, developing Java batches, React frontends, and Spring Boot REST APIs.",
+            "startDate": "January 2018",
+            "endDate": "December 2018"
+        },
+        {
+            "title": "HRM Informatica",
+            "description": "Consultant in the energy sector, focusing on Java and Spring projects.",
+            "startDate": "January 2017",
+            "endDate": "December 2017"
+        }
+    ],
+    "educations": [
+        {
+            "title": "Commercial Degree",
+            "institution": "Some Commercial School",
+            "period": "2009 - 2013",
+            "vote": "90/100"
+        },
+        {
+            "title": "Computer Science",
+            "institution": "University of Bari",
+            "period": "2013 - 2017",
+            "vote": "110/110"
+        }
+    ]
+}

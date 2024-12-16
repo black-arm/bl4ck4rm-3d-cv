@@ -1,12 +1,13 @@
 import { render, screen, cleanup } from '@testing-library/react';
 import { describe, test, expect, afterEach } from 'vitest';
-import Card from '../components/Card';
+import Card from '../shared/components/Card';
 
 describe('Card Component', () => {
 
     afterEach(() => {
         cleanup();
     });
+
     test('renders the card with children', async () => {
         render(
             <Card>
@@ -14,7 +15,7 @@ describe('Card Component', () => {
             </Card>
         );
         const childElement = screen.getByText(/Child Element/i);
-        expect(childElement).toBeDefined()
+        expect(childElement).toBeDefined();
     });
 
     test('renders the card with custom class', async () => {
@@ -27,15 +28,16 @@ describe('Card Component', () => {
         expect(card?.classList.contains('custom-class')).toBe(true);
     });
 
-    test('renders the card with hover effect', async () => {
+    test('renders the card with link and hover effect', async () => {
         render(
-            <Card hover>
+            <Card link="/test-link">
                 <div>Child Element</div>
             </Card>
         );
         const card = screen.getByText(/Child Element/i).parentElement;
         expect(card?.classList.contains('hover:bg-gray-500/30')).toBe(true);
-    })
+        const linkElement = screen.getByRole('link');
+        expect(linkElement.getAttribute('href')).toContain('/test-link');
+    });
 
-    
 });
