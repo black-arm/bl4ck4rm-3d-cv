@@ -3,20 +3,16 @@ import Card from '@/shared/components/Card';
 import { Experiences } from '@/shared/model';
 
 interface ExperienceCardProps {
-    
     experiences: Experiences;
-    link?: string;
-    icon?: string;
-    className?: string;
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = 
-    ({ experiences, link }) => {
+    ({ experiences }) => {
 
     return (
-        <Card link={link} icon='computer'>
+        <Card className='h-2/3' icon='computer'>
             <h3 className="text-xl font-bold mb-2">Experience</h3>
-            <ul className="overflow-y-auto h-60">
+            <ul className="overflow-y-scroll h-[32rem]">
                 {experiences.map((experience, index) => (
                     <Card key={index} className="mb-4">
                         <h4 className="text-base font-bold">{experience.title}</h4>

@@ -5,6 +5,7 @@ export interface UserInfo {
     },
     technologies: string[];
     experiences: Experiences;
+    educations: Educations;
 }
 
 export interface Experience {

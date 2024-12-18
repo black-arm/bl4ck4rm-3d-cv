@@ -43,16 +43,16 @@
     ],
     "educations": [
         {
-            "title": "Commercial Degree",
-            "institution": "Some Commercial School",
-            "period": "2009 - 2013",
-            "vote": "90/100"
+            "title": "Computer Science and Digital Communication",
+            "institution": "University of Bari",
+            "period": "2015 - 2019",
+            "vote": "90/110"
         },
         {
-            "title": "Computer Science",
-            "institution": "University of Bari",
-            "period": "2013 - 2017",
-            "vote": "110/110"
+            "title": "Commercial Degree",
+            "institution": "Istituto Tecnico Economico Statale - Pitagora",
+            "period": "2009 - 2013",
+            "vote": "80/100"
         }
     ]
 }
