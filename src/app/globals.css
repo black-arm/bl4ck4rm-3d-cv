@@ -21,3 +21,40 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+
+@keyframes move-right {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(120px);
+  }
+}
+
+.move-right {
+  animation-name: move-right;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-delay: 3s;
+  animation-direction: alternate;
+}
+
+@keyframes move-left {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-120px);
+  }
+}
+
+.move-left {
+  animation-name: move-left;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-delay: 3s;
+  animation-direction: alternate;
+}

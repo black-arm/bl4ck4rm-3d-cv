@@ -6,6 +6,7 @@ export interface UserInfo {
     technologies: string[];
     experiences: Experiences;
     educations: Educations;
+    resumePath: string;
 }
 
 export interface Experience {

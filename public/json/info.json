@@ -2,6 +2,7 @@
     "aboutMe": {
         "description": "I am a software engineer with a passion for creating and developing software applications. I have experience in developing web applications. I am always looking for new challenges and opportunities to learn and grow as a software engineer."
     },
+    "resumePath": "/Antonio Basile - English CV.pdf",
     "technologies": [
         "Next.js", 
         "React", "TypeScript", "Angular",
