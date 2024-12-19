@@ -5,7 +5,7 @@ import Card from '@/shared/components/Card';
 const IconCard: React.FC = () => {
     return (
         <Card className='p-8 text-center'>
-            <Image src={myMemoji} alt="My Memoji" width={256} height={256} />
+            <Image className='m-auto' src={myMemoji} alt="My Memoji" width={256} height={256} />
         </Card>
     );
 };

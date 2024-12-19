@@ -7,9 +7,11 @@ interface AboutCardProps {
 
 const AboutCard: React.FC<AboutCardProps> = ({ text }) => {
     return (
-        <Card className="about-card" link='about-me' icon='arrow_up_right'>
-            <h2 className='text-2xl font-bold'>About Me</h2>
-            <p>{text}</p>
+        <Card link='about-me' icon='arrow_up_right'>
+            <div className='w-full h-80 flex justify-end flex-col'>
+                <h2 className='text-2xl font-bold'>About Me</h2>
+                <p>{text}</p>
+            </div>
         </Card>
     );
 };

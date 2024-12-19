@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" className={font.className}>
       <body>
         <FixedBackground />
-        <div className="relative z-10">{children}</div>
+        <div className="relative z-10 text-white">{children}</div>
       </body>
     </html>
   );

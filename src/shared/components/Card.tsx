@@ -28,7 +28,7 @@ const Card: React.FC<CardProps> = ({ children, className, link, icon }) => {
     );
 
     return link ? (
-        <Link href={link}>
+        <Link className="h-full" href={link}>
             {cardContent}
         </Link>
     ) : (
