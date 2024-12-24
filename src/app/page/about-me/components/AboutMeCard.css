@@ -1,0 +1,19 @@
+
+  @keyframes textRotate2 {
+    0%,40% {
+        transform: rotateY(90deg)
+       
+    }
+
+    60%,to {
+        transform: rotateY(0deg)
+    }
+  }
+
+
+  .move-char {
+    animation-name: textRotate2;
+    animation-duration: 2.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }

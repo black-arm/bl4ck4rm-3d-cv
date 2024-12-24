@@ -1,0 +1,13 @@
+{
+  "books": [
+    "atomic-habits.jpg",
+    "how-to-win-friends.jpg",
+    "clean-code.jpg",
+    "refactoring.jpg",
+    "node-js.jpg",
+    "angular-projects.jpg"
+  ],
+  "journeys": [
+    "After high school, I decided to pursue a university degree in Computer Science and Digital Communication in Bari. During this journey, I discovered the beauty of creating applications. I had the opportunity to learn how computers and networks work and how they communicate with each other, how to create software programs and which data structures to use, which patterns to use to create maintainable and reusable code."
+]
+}

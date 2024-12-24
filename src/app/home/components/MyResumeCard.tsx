@@ -6,7 +6,7 @@ const MyResumeCard: React.FC = () => {
         <Card
             icon='download' 
             className="bg-slate-500">
-            <h2 className='font-xl font-bold py-5'>My Resume</h2>
+            <h2 className='font-xl font-bold xl:py-3 py-5'>My Resume</h2>
         </Card>
     );
 };

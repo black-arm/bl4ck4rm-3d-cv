@@ -11,8 +11,8 @@ export default async function Home() {
 
   return (
     <>
-      <div className='w-full xl:px-60 xl:pt-52 md:px-40 md:pt-40 px-10 pt-16'>
-        <div className='h-[42rem] max-h-[42rem] gap-8 grid 
+      <div className='w-full 2xl:px-60 md:px-40 md:pt-20 md:pb-10 xl:py-5 2xl:pt-32 p-10'>
+        <div className='gap-8 grid 
           grid-cols-1 md:grid-cols-2 xl:grid-cols-4 content-evenly'>
           <XlSkeleton info={info} userRepositories={userRepositories} />
           <MdSkeleton info={info} userRepositories={userRepositories} />
