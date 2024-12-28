@@ -1,15 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
+import { ChipProps } from '../models';
 
-interface ChipProps {
-    label: string;
-    icon?: string;
-    color?: string;
-}
-
-const Chip: React.FC<ChipProps> = ({ label, icon, color }) => {
+const Chip: React.FC<ChipProps> = ({ label, icon, color, className }) => {
     return (
-        <div className={`flex items-center px-3 py-2 rounded-full}`}
+        <div className={`flex items-center px-3 py-2 rounded-full ${className ?? ''}`}
             style={{ backgroundColor: color }}>
             {icon && <Image src={icon} alt="icon" width={16} height={16} 
                 className=" w-4 h-4 mr-2" />}

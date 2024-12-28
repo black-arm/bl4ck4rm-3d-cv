@@ -12,8 +12,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ children, className, link, icon }) => {
     const cardContent = (
         <div className={`bg-gray-800/30 rounded-xl relative 
-            p-4 shadow-md text-white 
-            ${className} ${link ? 'hover:bg-gray-500/30' : ''}`}>
+            p-4 shadow-md text-white ${className} ${link ? 'hover:bg-gray-500/30' : ''}`}>
             <div className='absolute top-2 right-2'>
                 {icon ? 
                     <Image src={`/icons/${icon}.svg`} 

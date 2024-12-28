@@ -3,6 +3,7 @@ import AboutMeCard from './components/AboutMeCard';
 import { fetchAboutMe } from './api/about-me.api';
 import BooksCard from './components/BooksCard';
 import JourneyCard from './components/JourneyCard';
+import ChipsCard from './components/ChipsCard';
 
 const AboutMePage: React.FC = async () => {
 
@@ -20,6 +21,7 @@ const AboutMePage: React.FC = async () => {
                         <JourneyCard journeys={aboutMe.journeys} />
                     </div>
                     <div>
+                        <ChipsCard chips={aboutMe.features} />
                     </div>
             </div>
         </div>

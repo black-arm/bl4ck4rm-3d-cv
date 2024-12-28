@@ -1,0 +1,16 @@
+@keyframes chipAnimation {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.chips-card-box {
+    animation: chipAnimation 1s ease-in-out forwards;
+    
+}
+

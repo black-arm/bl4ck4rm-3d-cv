@@ -9,5 +9,43 @@
   ],
   "journeys": [
     "After high school, I decided to pursue a university degree in Computer Science and Digital Communication in Bari. During this journey, I discovered the beauty of creating applications. I had the opportunity to learn how computers and networks work and how they communicate with each other, how to create software programs and which data structures to use, which patterns to use to create maintainable and reusable code."
-]
+    ,
+    "After university, I started working in 2018. I began programming in JAVA 8 and using frameworks from the Spring Framework suite, particularly Spring Boot and Spring Batch."
+    ,
+    "Starting the adventure in Java was a lot of fun! I learned a lot of things by seeing them up close. From how the JVM worked to how to build certain patterns to how to structure projects. But soon things changed. Due to requirements, I started working on the frontend! Another world 😃"
+    ,
+    "I started working with JavaScript and the frontend world, and I haven't stopped since. From starting to do small tasks, such as fixing minor bugs and/or changing labels, I began to make real evolutionary changes. I learned to use both React and Angular, which allowed me to immediately understand the differences between the two technologies. Since 2020, I have mainly been working on the frontend."
+  ],
+  "features": [
+    {
+      "label": "Problem Solver",
+      "icon": "",
+      "color": "#FF5733"
+    },
+    {
+      "label": "Curious Mind",
+      "icon": "",
+      "color": "#33FF57"
+    },
+    {
+      "label": "Chess Player",
+      "icon": "",
+      "color": "#3357FF"
+    },
+    {
+      "label": "Traveler",
+      "icon": "",
+      "color": "#FF33A1"
+    },
+    {
+      "label": "Footballer",
+      "icon": "",
+      "color": "#FF8C33"
+    },
+    {
+      "label": "Reader",
+      "icon": "",
+      "color": "#8C33FF"
+    }
+  ]
 }
