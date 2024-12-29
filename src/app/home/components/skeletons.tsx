@@ -1,4 +1,6 @@
+import { DevToArticles } from "../model";
 import AboutCard from "./AboutCard";
+import ArticlesCard from "./ArticlesCard";
 import EducationCard from "./EducationCard";
 import ExperienceCard from "./ExperienceCard";
 import IconCard from "./IconCard";
@@ -12,9 +14,10 @@ import { UserInfo, UserRepositories } from "@/shared/model";
 interface SkeletonProps {
     info: UserInfo;
     userRepositories?: UserRepositories;
+    devToArticles?: DevToArticles
 }
 
-export function XlSkeleton({ info, userRepositories }: SkeletonProps) {
+export function XlSkeleton({ info, userRepositories, devToArticles }: SkeletonProps) {
 
     return <>
         <div className='hidden xl:flex flex-col h-full gap-5'>
@@ -35,17 +38,19 @@ export function XlSkeleton({ info, userRepositories }: SkeletonProps) {
         </div>
         <div className='hidden xl:flex flex-col h-full justify-between gap-5'>
             { userRepositories ? <ProjectsCard userRepositories={userRepositories} /> : null }
+            { devToArticles ? <ArticlesCard articles={devToArticles} /> : null }
         </div>
     </>
 }
 
 
-export function MdSkeleton({ info, userRepositories }: SkeletonProps) {
+export function MdSkeleton({ info, userRepositories, devToArticles }: SkeletonProps) {
     return <>
     <div className='hidden xl:hidden md:flex md:flex-col gap-5'>
         <NameCard />
         <IconCard />
         <AboutCard text={info.aboutMe.description} />
+        { devToArticles ? <ArticlesCard articles={devToArticles} /> : null }
         <a href={info.resumePath} download>
             <MyResumeCard/>
         </a>
@@ -58,12 +63,13 @@ export function MdSkeleton({ info, userRepositories }: SkeletonProps) {
     </>
 }
 
-export function SmSkeleton({ info, userRepositories }: SkeletonProps) {
+export function SmSkeleton({ info, userRepositories, devToArticles }: SkeletonProps) {
     return <>
         <div className='md:hidden flex flex-col h-full gap-5'>
             <IconCard />
             <AboutCard text={info.aboutMe.description} />
             <ExperienceCard experiences={info.experiences} />
+            { devToArticles ? <ArticlesCard articles={devToArticles} /> : null }
             { userRepositories ? <ProjectsCard userRepositories={userRepositories} />: null}
         </div>
     </>

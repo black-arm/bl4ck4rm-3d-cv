@@ -2,6 +2,7 @@ import { UserInfo, UserRepositories } from "@/shared/model";
 import { Octokit } from 'octokit';
 import { promises as fs } from 'fs';
 import { projectsQuery } from "./queries";
+import { DevToArticles } from "../model";
 
 export async function getInfo(): Promise<UserInfo> {
 
@@ -26,4 +27,11 @@ export async function fetchRepositories(): Promise<UserRepositories | undefined>
   } catch (error) {
     console.error(error);
   }
+}
+
+export async function fetchArticlesList(): Promise<DevToArticles> {
+
+  const username = process.env.DEV_TO_USERNAME;
+  const response = await fetch(`https://dev.to/api/articles?username=${username}`);
+  return await response.json() as DevToArticles;
 }

@@ -1,0 +1,1 @@
+export * from './dev-to-articles.model';

@@ -12,7 +12,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> =
     return (
         <Card className='h-2/3' icon='computer'>
             <h3 className="text-xl font-bold mb-2">Experience</h3>
-            <ul className="overflow-auto xl:h-[21rem] md:h-48">
+            <ul className="overflow-y-auto mr-4 xl:h-[21rem] lg:h-96 md:h-48">
                 {experiences.map((experience, index) => (
                     <Card key={index} className="mb-4">
                         <h4 className="text-base font-bold">{experience.title}</h4>
