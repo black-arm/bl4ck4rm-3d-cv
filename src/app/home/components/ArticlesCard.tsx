@@ -10,7 +10,7 @@ const ArticlesCard: React.FC<ArticlesCardProps> = ({ articles }) => {
     return (
         <Card icon='newspaper' className='h-full'>
             <h3 className="text-xl font-bold mb-2">Articles</h3>
-            <ul className="overflow-y-auto mr-4 xl:h-56 lg:h-40">
+            <ul className="overflow-y-auto mr-4 xl:h-56 md:h-40">
                 {articles.map((article, index) => (
                     <Card key={index} className="mb-4 hover:bg-gray-500/30 mr-4">
                         <a href={article.url} target="_blank" rel="noreferrer">
