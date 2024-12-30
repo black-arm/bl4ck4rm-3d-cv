@@ -10,9 +10,9 @@ interface ChipCardProps {
 
 const ChipsCard: React.FC<ChipCardProps> = ({chips}) => {
     return (
-        <Card className='h-full'>
+        <Card className='xl:h-full md:h-1/2'>
             <h2 className="text-2xl font-bold">My Features</h2>
-            <div className='flex flex-col chips-card-box justify-end h-[95%]'>
+            <div className='flex flex-col chips-card-box justify-end xl:h-[95%] md:h-[85%]'>
                 <div className="flex flex-wrap gap-2 p-2">
                     {chips.map((chip, index) => (
                         <Chip key={index} {...chip} />

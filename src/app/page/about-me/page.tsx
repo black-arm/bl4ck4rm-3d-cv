@@ -1,28 +1,18 @@
 import React from 'react';
-import AboutMeCard from './components/AboutMeCard';
 import { fetchAboutMe } from './api/about-me.api';
-import BooksCard from './components/BooksCard';
-import JourneyCard from './components/JourneyCard';
-import ChipsCard from './components/ChipsCard';
+import { MdSkeleton, SmSkeleton, XlSkeleton } from './components/skeletons';
 
 const AboutMePage: React.FC = async () => {
 
     const aboutMe = await fetchAboutMe();
 
     return (
-        <div className='px-60 pt-9'>
-            <div className='grid grid-cols-1 sm:grid-cols-1 
+        <div className='xl:px-60 xl:pt-9 md:px-32 md:pt-20 h-full py-16 px-20'>
+            <div className='grid grid-cols-1
                 md:grid-cols-2 xl:grid-cols-3 content-evenly gap-8'>
-                    <div className='flex-col gap-2 flex'>
-                        <AboutMeCard />
-                        <BooksCard books={aboutMe.books} />
-                    </div>
-                    <div>
-                        <JourneyCard journeys={aboutMe.journeys} />
-                    </div>
-                    <div>
-                        <ChipsCard chips={aboutMe.features} />
-                    </div>
+                    <SmSkeleton aboutMe={aboutMe} />
+                    <MdSkeleton aboutMe={aboutMe} />
+                    <XlSkeleton aboutMe={aboutMe} />
             </div>
         </div>
     );
